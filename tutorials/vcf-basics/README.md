@@ -29,13 +29,21 @@ This guide demystifies the Variant Call Format (VCF). It is structured for rapid
 
 Follow the documents below in sequential order to build a strong foundation in VCF interpretation.
 
-| Step | File | Primary Focus | Key Learning Outcome |
-| :---: | :--- | :--- | :--- |
-| **1** | **[01-what-is-vcf.md](./01-what-is-vcf.md)** | **Foundation (Core):** Purpose of VCF, its structure, and the role of the header & body. | Understand why VCF is the standard format for variant representation. |
-| **2** | **[02-the-nine-columns.md](./02-the-nine-columns.md)** | **Structure (Core):** Detailed breakdown of the nine fixed columns. | Recognize where positional, reference, and variant information is stored. |
-| **3** | **[03-info-vs-format.md](./03-info-vs-format.md)** | **Core Concept:** Difference between global (INFO) and sample-specific (FORMAT) data. | Know where to find annotations vs. genotype metrics. |
-| **4** | **[04-allelic-representation.md](./04-allelic-representation.md)** | **Genotype Interpretation:** Understanding GT, AD, DP, and the 0/1 allele indexing system. | Correctly interpret a sample’s genotype and calculate VAF. |
-| **5** | **[05-simple-vcf-filtering.md](./05-simple-vcf-filtering.md)** | **Hands-on (Core):** Practical filtering with `bcftools`. | Perform essential quality filtering (e.g., PASS, SNPs only). |
+|  Step  | File                                                               | Primary Focus                                                             | Key Learning Outcome                                                    |
+| :----: | :----------------------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------- |
+|  **1** | **[01-what-is-vcf.md](./01-what-is-vcf.md)**                       | **Foundation (Core):** Purpose of VCF, header vs body, and why it exists. | Understand why VCF is the standard format for variant representation.   |
+| **2a** | **[02a-positional-data.md](./02a-positional-data.md)**             | **Group 1 – Positional Data:** CHROM, POS, ID.                            | Accurately locate and identify a variant by genomic coordinates.        |
+| **2b** | **[02b-allelic-data.md](./02b-allelic-data.md)**                   | **Group 2 – Allelic Data:** REF, ALT, SNPs & indels.                      | Interpret substitutions, insertions, deletions, and normalized alleles. |
+| **2c** | **[02c-quality-status.md](./02c-quality-status.md)**               | **Group 3 – Quality & Status:** QUAL, FILTER.                             | Assess variant confidence and pass/fail status.                         |
+|  **3** | **[03-info-vs-format.md](./03-info-vs-format.md)**                 | **Core Concept:** INFO vs FORMAT distinction.                             | Know where to find global annotations vs sample-level metrics.          |
+|  **4** | **[04-allelic-representation.md](./04-allelic-representation.md)** | **Genotype Interpretation:** GT, AD, DP, allele indexing (0/1).           | Correctly interpret genotypes and calculate VAF.                        |
+|  **5** | **[05-simple-vcf-filtering.md](./05-simple-vcf-filtering.md)**     | **Hands-on (Core):** Practical filtering with `bcftools`.                 | Perform essential quality filtering and understand command syntax.      |
+
+
+> **Why Step 2 is split:**  
+> The original “nine fixed columns” concept is easier to understand when broken into **positional**, **allelic**, and **quality** groups.  
+> Steps **2a–2c** together cover all fixed VCF columns while reducing cognitive overload.
+
 
 > **Tip:** Beginners can prioritize the Core Concepts first and come back to Deep Dive/Context blocks later.
 
