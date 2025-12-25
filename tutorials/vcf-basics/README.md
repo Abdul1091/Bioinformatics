@@ -35,7 +35,8 @@ Follow the documents below in sequential order to build a strong foundation in V
 | **2a** | **[02a-positional-data.md](./02a-positional-data.md)**             | **Group 1 – Positional Data:** CHROM, POS, ID.                            | Accurately locate and identify a variant by genomic coordinates.        |
 | **2b** | **[02b-allelic-data.md](./02b-allelic-data.md)**                   | **Group 2 – Allelic Data:** REF, ALT, SNPs & indels.                      | Interpret substitutions, insertions, deletions, and normalized alleles. |
 | **2c** | **[02c-quality-status.md](./02c-quality-status.md)**               | **Group 3 – Quality & Status:** QUAL, FILTER.                             | Assess variant confidence and pass/fail status.                         |
-|  **3** | **[03-info-vs-format.md](./03-info-vs-format.md)**                 | **Core Concept:** INFO vs FORMAT distinction.                             | Know where to find global annotations vs sample-level metrics.          |
+| **3a** | **[03a-info-site-level.md](./03a-info-site-level.md)** | **Site-Level Annotations:** INFO. | Understand shared, site-level annotations and their scope. |
+| **3b** | **[03b-format-sample-level.md](./03b-format-sample-level.md)** | **Sample-Level Structure:** FORMAT & sample columns. | Correctly interpret how per-sample data is encoded. |
 |  **4** | **[04-allelic-representation.md](./04-allelic-representation.md)** | **Genotype Interpretation:** GT, AD, DP, allele indexing (0/1).           | Correctly interpret genotypes and calculate VAF.                        |
 |  **5** | **[05-simple-vcf-filtering.md](./05-simple-vcf-filtering.md)**     | **Hands-on (Core):** Practical filtering with `bcftools`.                 | Perform essential quality filtering and understand command syntax.      |
 
@@ -43,6 +44,10 @@ Follow the documents below in sequential order to build a strong foundation in V
 > **Why Step 2 is split:**  
 > The original “nine fixed columns” concept is easier to understand when broken into **positional**, **allelic**, and **quality** groups.  
 > Steps **2a–2c** together cover all fixed VCF columns while reducing cognitive overload.
+
+> **Why Step 3 is split:**  
+> INFO and FORMAT represent a fundamental conceptual boundary in VCF.  
+> Separating them prevents one of the most common and costly interpretation errors: confusing *site-level annotations* with *sample-level evidence*.
 
 
 > **Tip:** Beginners can prioritize the Core Concepts first and come back to Deep Dive/Context blocks later.
