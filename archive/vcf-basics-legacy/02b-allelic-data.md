@@ -439,7 +439,9 @@ POS  REF  ALT
 
 ## ➡️ What’s Next
 
-**02c — Quality & Status (`QUAL`, `FILTER`)**  
 We stop asking *what changed* and start asking:
-
 **“Do we trust this variant?”**
+
+Continue to:
+
+**[02c-quality-status.md](./02c-quality-status.md)** 

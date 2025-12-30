@@ -1,4 +1,4 @@
-# 🧬 02a — Positional Data (`CHROM`, `POS`, `ID`)
+## 🧬 02a — Positional Data (`CHROM`, `POS`, `ID`)
 > 📘 **VCF Spec Alignment:** This lesson follows VCF v4.2+ conventions. Differences for earlier versions are noted where relevant.
 
 ## 📌 Introduction: Positional Data in VCF

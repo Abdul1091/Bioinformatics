@@ -258,4 +258,4 @@ Up to now, we have looked at data that describes the **variant site** as a whole
 
 Continue to:
 
-**[03-info-vs-format.md](./03-info-vs-format.md)**
+**[03-info-vs-format.md](./03a-info-site-level.md)**
